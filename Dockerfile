@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:wheezy
 
 # Download, extract, and run TeX Live installer from most recent CTAN disk image
 # (Although downloading the whole disk image is slow and wasteful, for some
@@ -8,12 +8,12 @@ FROM debian:latest
 RUN apt-get update \
     && apt-get install -y wget bsdtar perl ca-certificates \
     && wget --progress=dot:giga \
-            http://mirror.ctan.org/systems/texlive/Images/texlive.iso \
+            ftp://tug.org/texlive/historic/2012/texlive2012.iso \
     && mkdir /install \
-    && bsdtar -xpC /install -f /texlive.iso \
-    && rm /texlive.iso \
+    && bsdtar -xpC /install -f /texlive2012.iso \
+    && rm /texlive2012.iso \
     && wget --directory-prefix=/install \
-            https://raw.githubusercontent.com/rchurchley/docker-texlive/latest/installation.profile \
+            https://raw.githubusercontent.com/rchurchley/docker-texlive/2012/installation.profile \
     && ./install/install-tl --profile /install/installation.profile \
     && rm -R /install \
     && mkdir /data \
