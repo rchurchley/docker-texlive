@@ -8,12 +8,12 @@ FROM debian:wheezy
 RUN apt-get update \
     && apt-get install -y wget bsdtar perl ca-certificates \
     && wget --progress=dot:giga \
-            ftp://tug.org/texlive/historic/2012/texlive2012.iso \
+            ftp://tug.org/texlive/historic/2013/texlive2013.iso \
     && mkdir /install \
-    && bsdtar -xpC /install -f /texlive2012.iso \
-    && rm /texlive2012.iso \
+    && bsdtar -xpC /install -f /texlive2013.iso \
+    && rm /texlive2013.iso \
     && wget --directory-prefix=/install \
-            https://raw.githubusercontent.com/rchurchley/docker-texlive/2012/installation.profile \
+            https://raw.githubusercontent.com/rchurchley/docker-texlive/2013/installation.profile \
     && ./install/install-tl --profile /install/installation.profile \
     && rm -R /install \
     && mkdir /data \
