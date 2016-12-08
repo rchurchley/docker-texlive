@@ -6,7 +6,7 @@ FROM debian:latest
 #  least when Docker is running in a virtual machine.)
 
 RUN apt-get update \
-    && apt-get install -y wget bsdtar perl \
+    && apt-get install -y wget bsdtar perl ca-certificates \
     && wget --progress=dot:giga \
             http://mirror.ctan.org/systems/texlive/Images/texlive.iso \
     && mkdir /install \
