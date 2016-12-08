@@ -8,12 +8,12 @@ FROM debian:jessie
 RUN apt-get update \
     && apt-get install -y wget bsdtar perl ca-certificates \
     && wget --progress=dot:giga \
-            ftp://tug.org/texlive/historic/2014/texlive2014.iso \
+            ftp://tug.org/texlive/historic/2015/texlive2015.iso \
     && mkdir /install \
-    && bsdtar -xpC /install -f /texlive2014.iso \
-    && rm /texlive2014.iso \
+    && bsdtar -xpC /install -f /texlive2015.iso \
+    && rm /texlive2015.iso \
     && wget --directory-prefix=/install \
-            https://raw.githubusercontent.com/rchurchley/docker-texlive/2014/installation.profile \
+            https://raw.githubusercontent.com/rchurchley/docker-texlive/2015/installation.profile \
     && ./install/install-tl --profile /install/installation.profile \
     && rm -R /install \
     && mkdir /data \
