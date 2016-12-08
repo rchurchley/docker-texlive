@@ -1,22 +1,27 @@
-# Dockerized TeX Live distributions
+# Supported tags
 
-Dockerfiles for current and historical versions of TeX Live
-
-
-## Supported tags
-
-- `latest` ([*rchurchley/texlive-latest/Dockerfile*][latest])
+- `latest` ([*latest/Dockerfile*][latest])
+- `2015` ([*2015/Dockerfile*][2015])
+- `2014` ([*2014/Dockerfile*][2014])
+- `2013` ([*2013/Dockerfile*][2013])
+- `2012` ([*2012/Dockerfile*][2012])
 
 [latest]: https://github.com/rchurchley/docker-texlive/blob/latest/Dockerfile
+[2015]: https://github.com/rchurchley/docker-texlive/blob/2015/Dockerfile
+[2014]: https://github.com/rchurchley/docker-texlive/blob/2014/Dockerfile
+[2013]: https://github.com/rchurchley/docker-texlive/blob/2013/Dockerfile
+[2012]: https://github.com/rchurchley/docker-texlive/blob/2012/Dockerfile
 
 
-## About TeX Live
+
+# About TeX Live
 
 [TeX Live](https://www.tug.org/texlive/) is a comprehensive TeX system with all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.
 This repo provides Dockerfiles for current and historical versions of TeX Live  based on the disk images released by the [TeX Users Group](https://www.tug.org).
 
 
-## Basic usage
+
+# Basic usage
 
 These images can be used to compile TeX and LaTeX documents by mounting the directory containing your document files.
 
