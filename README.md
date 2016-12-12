@@ -23,7 +23,7 @@ The `latest` image contains a complete installation of the most recent general r
 [TeX Live](https://www.tug.org/texlive/) is a comprehensive TeX system with all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.
 This repo provides Dockerfiles for current and historical versions of TeX Live  based on the disk images released by the [TeX Users Group](https://www.tug.org).
 
-These Dockerfiles are intended for authors and package maintainers who need a full TeX distribution for typesetting or testing purposes. If you are incorporating LaTeX into an automated build process, please consider using a more 
+These Dockerfiles are intended for authors and package maintainers who need a full TeX distribution for typesetting or testing purposes. If you are incorporating LaTeX into an automated build process, please consider using a slimmer distribution containing only the dependencies you need.
 
 
 # Basic usage
