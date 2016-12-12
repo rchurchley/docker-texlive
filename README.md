@@ -1,6 +1,7 @@
 # Supported tags and Dockerfile links
 
 - `latest` ([*latest/Dockerfile*][latest])
+- `metropolis` ([*latest/metropolis/Dockerfile*][metropolis])
 - `2015` ([*2015/Dockerfile*][2015])
 - `2014` ([*2014/Dockerfile*][2014])
 - `2013` ([*2013/Dockerfile*][2013])
@@ -11,6 +12,9 @@
 [2014]: https://github.com/rchurchley/docker-texlive/blob/2014/Dockerfile
 [2013]: https://github.com/rchurchley/docker-texlive/blob/2013/Dockerfile
 [2012]: https://github.com/rchurchley/docker-texlive/blob/2012/Dockerfile
+[metropolis]: https://github.com/rchurchley/docker-texlive/blob/latest/metropolis/Dockerfile
+
+The `latest` image contains a complete installation of the most recent general release of TeX Live (currently TeX Live 2016, released around 23 May 2016). The `metropolis` image additionally includes the [Fira Sans, Fira Code, and Fira Mono](https://carrois.com/typefaces/FiraSans/) type families, which is used by the [Metropolis theme](https://github.com/matze/mtheme) for Beamer presentations.
 
 
 
