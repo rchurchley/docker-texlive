@@ -1,5 +1,5 @@
 selected_scheme scheme-custom
-TEXDIR /usr/local/texlive/distribution
+TEXDIR /usr/local/texlive
 TEXMFCONFIG /.texlive/texmf-config
 TEXMFHOME /texmf
 TEXMFLOCAL /usr/local/texlive/texmf-local
